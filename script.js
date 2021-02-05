@@ -1182,7 +1182,7 @@ Rect.prototype.contains = function(x, y) {
 	if(channel_id == "") channel_id = "lobby";
 
 	var wssport = window.location.hostname == "www.multiplayerpiano.com" ? 443 : 8443;
-	var gClient = new Client("wss://" + window.location.hostname + ":" + wssport);
+	var gClient = new Client("wss://vfd-mppserver.glitch.me/");
 	gClient.setChannel(channel_id);
 	gClient.start();
 
